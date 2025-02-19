@@ -1,0 +1,192 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* พื้นหลังเว็บไซต์ */
+body {
+    background-color: #ffffff; 
+}
+
+/* คอนเทนเนอร์ */
+.container {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+/* เมนูนำทาง */
+nav {
+    background-color: rgba(34, 100, 34, 0.9);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* กล่องค้นหา */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    width: 160px;
+}
+
+.search-btn i {
+    color: #000;
+    font-size: 16px;
+}
+
+/* ส่วนแสดงผลเนื้อหา */
+.blog-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 100px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-item img {
+    width: 100%;
+    border-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #d8d8d8;
+}
+
+.blog-item p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.blog-item a {
+    display: inline-block;
+    color: #fff;
+    background-color: rgb(12, 74, 20);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.blog-item a:hover {
+    background-color: #ffdd57;
+    color: #226422;
+}
+
+/* ฟุตเตอร์ */
+footer {
+    background: rgb(34, 100, 34);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px; /* ปรับให้ไม่ใหญ่เกินไป */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+.p1, .p2 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.p1:hover, .p2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}

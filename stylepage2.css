@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+ 
+}
+nav{
+    background-color: rgb(83, 129, 77);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0;
+   
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+    
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+nav ul li a:hover{
+    color: rgb(8, 109, 8);
+}
+ 
+
+
+.explore-section{
+    position: relative;
+    width: 100%;
+    padding: 80px 10vw;
+    color: #ffffff;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.section-para{
+    width: 50%;
+    min-width: 300px;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0.6;
+}
+
+.tours-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 15px;
+}
+
+.tour-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.tour-card:nth-child(2){
+    grid-row: span 2;
+}
+.tour-card:nth-child(6){
+    grid-row: span 2;
+}
+.tour-card:nth-child(3){
+    grid-column: span 2;
+}
+
+
+.tour-card:last-child{
+    grid-column: span 2;
+}
+
+.tour-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+    z-index: -1;
+}
+
+.tour-card:hover .tour-img{
+    opacity: 0.8u66;
+    transform: scale(1.1);
+}
+
+.tour-name{
+    font-weight: 300;
+}
+
+.tour-action{
+    margin-left: 20px;
+    font-size: 14px;
+    position: relative;
+}
+.tour-body{
+    color: #fff;
+}
+
+.tour-action::before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: -3px;
+    background: url('map\ icon.png');
+    
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
